@@ -1,13 +1,4 @@
 
-bool vitalsAreOk(float bpm, float spo2, float respRate) {
-  if(checkBPM(bpm) && checkSPO2(spo2) && checkRespRate(respRate))
-  {
-    return true;
-  }
-   
-  return false;
-}
-
 bool checkBPM(float bpm)
 {
   if(bpm < 70 || bpm > 150) {
@@ -32,4 +23,13 @@ bool checkRespRate(float respRate)
   }
   
   return true;
+}
+
+bool vitalsAreOk(float bpm, float spo2, float respRate) {
+  if(checkBPM(bpm) && checkSPO2(spo2) && checkRespRate(respRate))
+  {
+    return true;
+  }
+   
+  return false;
 }
