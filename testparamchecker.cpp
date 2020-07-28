@@ -15,7 +15,7 @@ TEST(VitalsTest, BPM_MaxOutOfRange) {
 
 
 TEST(VitalsTest, SPO2) {
-    ASSERT_EQ(true, vitalsAreOk(100, 70, 50));
+    ASSERT_EQ(true, vitalsAreOk(100, 90, 50));
 }
 
 TEST(VitalsTest, SPO2_MinOutOfRange) {
@@ -23,11 +23,11 @@ TEST(VitalsTest, SPO2_MinOutOfRange) {
 }
 
 TEST(VitalsTest, SPO2_MaxOutOfRange) {
-    ASSERT_EQ(false, vitalsAreOk(100, 0xffff, 50));
+    ASSERT_EQ(false, vitalsAreOk(100, 0xfffff, 50));
 }
  
 TEST(VitalsTest, RESP) {
-    ASSERT_EQ(true, vitalsAreOk(100, 70, 50));
+    ASSERT_EQ(true, vitalsAreOk(100, 90, 50));
 }
 
 TEST(VitalsTest, RESP_MinOutOfRange) {
