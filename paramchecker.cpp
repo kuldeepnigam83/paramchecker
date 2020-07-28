@@ -31,10 +31,5 @@ bool vitalsAreOk(float bpm, float spo2, float respRate) {
   bool spo2Flag =  isSPO2OK(spo2);
   bool respRateFlag = isRespRateOK(respRate);
   
-  if(bpmFlag && spo2Flag && respRateFlag)
-  {
-    return true;
-  }
-   
-  return false;
+  return(bpmFlag && spo2Flag && respRateFlag);
 }
