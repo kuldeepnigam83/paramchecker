@@ -1,8 +1,8 @@
 
 #define BPM_MIN 70
 #define BPM_MAX 150
-#define SPO2_MIN 0
-#define SPO2_MAX 80
+#define SPO2_MIN 80
+#define SPO2_MAX 0xffff
 #define RESP_MIN 30
 #define RESP_MAX 60
 
